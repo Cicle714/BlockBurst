@@ -38,6 +38,7 @@ public class BlockSpawner : MonoBehaviour
         //ƒQ[ƒ€ƒNƒŠƒAˆ—
         if (BlockNum <= 0)
         {
+            FindObjectOfType<Bullet>().GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             if (!GameClear)
             {
                 GameClear = true;
